@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse('home 2')# teste página raiz home 
+    return render(request, 'home.html')# teste página raiz home 
 
 def contato(request):
     return HttpResponse('contato (11) 97070-7070') #test de retorno
